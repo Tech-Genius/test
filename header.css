@@ -1,0 +1,181 @@
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    
+    
+    left: 0;
+    right: 0;
+    
+    
+    
+    
+    
+  
+  
+  background-image:
+    linear-gradient(
+      to right, 
+    black, 
+      #333333, 
+       GREY, 
+       black
+    );
+    
+    
+    
+   
+    
+}
+.header .logo h2{
+    font-size: 50px;
+    padding-top: 20px;
+}
+.header .logo h2 span{
+    font-size: 40px;
+}
+.logo{
+  margin: 0px 7%;
+}
+
+.list{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+}
+.list ul{
+    display: flex;
+    list-style-type: none;
+ 
+}
+.list ul li{
+    margin: auto 50px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.list ul li input{
+    margin-top: 3%;
+    width: 200px;
+    border-radius: 20px;
+    padding: 5px 0px;
+    outline: none;
+    border: 2px grey solid;
+    text-align: center;
+    
+}
+.list ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 20px;
+}
+
+
+
+.icon{
+    padding: 20px 0;
+    font-size: 25px;
+  
+   
+}
+.icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.icon div{
+    padding:5px 12px;
+    width: fit-content;
+    background-color: grey;
+    display: none;
+    border-radius: 20px;
+   
+}
+.icon2{
+    padding: 20px 0;
+    font-size: 25px;
+    
+}
+
+.icon2 div{
+    padding:5px 12px;
+    width: fit-content;
+    background-color: grey;
+    display: none;
+
+}
+
+
+.list2{
+    
+   display: none; 
+  
+}
+.list2 ul{
+    width: auto;
+    background-color: ghostwhite;
+    text-align: center;
+}
+.list2 ul li{
+    padding: 15px;
+
+    list-style-type: none;
+    width: auto;
+
+}
+.list2 ul li a{
+    text-decoration: none;
+    color: rgba(46, 40, 40, 0.897);
+    font-size: 20px;
+    text-align: center;
+}
+.list2 input{
+    margin-top: 3%;
+    width: 200px;
+    border-radius: 20px;
+    padding: 5px 0px;
+    outline: none;
+    border: none;
+    text-align: center;
+    border: 1px grey solid;
+}
+.under{
+    text-align: center;
+    width: 50%;
+    margin: 0% 25%;
+    justify-self: center;
+    font-size: 20px;
+
+  
+}
+.ok{
+  
+  background-image:
+    linear-gradient(
+      to right, 
+    black, 
+      #333333, 
+       GREY, 
+       black
+    );
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1120px){
+    .list ul li{
+        display: none;
+    }
+   
+    .icon div{
+        display: block;
+    }
+}

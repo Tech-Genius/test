@@ -1,0 +1,38 @@
+*{
+    user-select: none;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: Corbel;
+}
+
+.container .search input{
+    width: 250px;
+    border: 2px solid red;
+}
+.container p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    color: red;
+}
+form input{
+    width: 500px;
+    height: 50px;
+    border-radius: 0px;
+    text-align: center;
+    font-family: Forte;
+    outline: none;
+    background-color: none;
+    border: none;
+    box-shadow: 0px 0px 5px 5px rgb(226, 226, 226);
+}
+/* header */
+body{
+    font-size: 30px;
+}
+body{
+    background-image: url();
+    height: 400px;
+    width: auto;
+}

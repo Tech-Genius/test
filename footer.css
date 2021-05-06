@@ -1,0 +1,13 @@
+.holder{
+    
+  height: 500px;
+  
+  background-image:
+    linear-gradient(
+      to right, 
+    black, 
+      #333333, 
+       GREY, 
+       black
+    );
+}

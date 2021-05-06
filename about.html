@@ -1,0 +1,53 @@
+<h1>This is About Page</h1>omm
+
+<html>
+<head>
+<title>(Type a title for your page here)</title>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(150deg, #0ed6fabd 0%, #2c2feef3 150%);
+color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+</style>
+
+
+<script type="text/javascript"> 
+ function display_c(){
+ var refresh=1000; // Refresh rate in milli seconds
+ mytime=setTimeout('display_ct()',refresh)
+ }
+
+function display_ct() {
+ var x = new Date()
+ document.getElementById('ct').innerHTML = x;
+ display_c();
+ }
+
+
+
+
+
+
+</script>
+</head>
+
+<body onload=display_ct();>
+<marquee id='ct'direction="right">yeah</marquee>
+
+
+
+
+</body>
+</html>

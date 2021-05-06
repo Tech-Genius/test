@@ -1,0 +1,232 @@
+body{
+    background-color: black;
+}
+.holder1{
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.holder1::before {    
+    content: "";
+    background-image: url(/stupid/content/img/pexels-andrea-piacquadio-3771823.jpg);
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    background-image: url(/stupid/content/img/pexels-andrea-piacquadio-3771823.jpg);
+    
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+}
+.holder2{
+    
+  
+  
+  background-image:
+    linear-gradient(
+      to right, 
+    black, 
+      #333333, 
+       GREY, 
+       black
+    );
+}
+
+video{
+    display: none;
+    
+    width: 100%;
+    height: 100%;
+  opacity: 0.3;
+  }
+  .text{
+        position:absolute;
+        top: 20%;
+        right:70%;
+        z-index:1;
+        color: white;
+        
+        
+  }
+  .text h2{
+      width: 200px;
+    font-size: 65px;
+    font-family: 'Girassol', cursive;
+  }
+  /* .vid{
+      position: relative;
+      z-index: 0;
+  }
+  .holder{
+      position: relative;
+  } */
+
+  .line1{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+   
+  }
+.box{
+    width: 80%;
+    justify-content: center;
+    justify-self: center;
+    background: transparent;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: transparent;
+}
+.line2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+
+}
+ img{
+    width: inherit;
+    height: inherit;
+
+}
+.clk1{
+    
+    display: none;
+}
+.clk2{
+    
+    display: none;
+}
+.clk3{
+    
+    display: none;
+}
+.clk4{
+    
+    display: none;
+}
+
+.images button{
+    width: 140px;
+    height: 40px;
+    outline: none;
+    margin-top: 20px;
+}
+.clk5{
+    
+    display: none;
+}
+.clk6{
+    
+    display: none;
+}
+.clk7{
+    
+    display: none;
+}
+.clk8{
+    
+    display: none;
+}
+.top{
+    padding: 80px 0px;
+}
+.top h3{
+    color: ghostwhite;
+    text-align: center;
+    font-size: 45px;
+    font-family:  'Girassol', cursive;
+}
+.grey{
+     margin: 0px 45%; 
+    width: 60px;
+    background-color: grey;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.in1{
+    width: 30px;
+    height: 30px;
+    background-color: #333333;
+    border-radius: 20px;
+    color: ghostwhite;
+
+}
+.in2{
+    
+    width: 30px;
+    height: 30px;
+    background-color: #333333;
+    border-radius: 20px;
+    display: none;
+    color: ghostwhite;
+}
+.images2 button{
+    width: 140px;
+    height: 40px;
+    outline: none;
+    margin-top: 20px;
+}
+.images2{
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:700px){
+      .text h2{
+          font-size: 40px;
+      }
+  }
+ 
+
+
+  @media screen and (max-width:490px){
+    .text h2{
+        font-size: 25px;
+        width: inherit;
+    }
+    .text h5{
+        width: inherit;
+    }
+    
+}
+
+@media screen and (max-width:750px){
+    .line1{
+        grid-template-columns: 1fr 1fr;
+    }
+    .line2{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+}
+@media screen and (max-width:450px){
+    .line1{
+        grid-template-columns:  1fr;
+    }
+    .line2{
+        grid-template-columns:  1fr;
+    }
+    
+    
+}

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="myModules">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ok</title>
+</head>
+<body>
+    
+<div class="container" >
+        <input type="text" name="" placeholder="Enter Name" ng-model="name">
+        <p>Welcome {{name}}, kindly serch for goods you want to buy</p>
+        <div class="search">
+            <input type="search" placeholder="search for goods you want to buy" ng-model="search">
+        </div>
+   <div class="container">
+       <div class="row">
+            <div class="col-4"><button class="bg-danger" style="width: 200px; border: none; margin-top: 20px;" ng-click="order='name'">Order by Name</button></div>
+           <div class="col-4"><button class="bg-danger" style="width: 200px; border: none; margin-top: 20px;" ng-click="order='country'">Order by Country</button></div>
+           <div class="col-4"><button class="bg-danger" style="width: 200px; border: none; margin-top: 20px;" ng-click="order='price'">Order price</button></div>
+       </div>
+   </div>
+
+   
+      
+     
+   </div>
+   <table class="table bg-info">
+       <thead>
+         <tr>
+             <th scope="col">name</th>
+             <th scope="col">price</th>
+             <th scope="col">country</th>
+             <th scope="col">Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="good in goods | orderBy: order | filter:search">
+              
+                <td>{{good.name}}</td>
+                <td>{{good.price | currency:  ' ₦'}}</td>
+                <td>{{good.country}}</td>
+                <td> <img ng-src="{{good.thumb}}" alt="" style="width: 50%; height: 200px;"></td>
+                <td><button type="button" class="btn btn-danger" ng-click="removeGood(good)">Delete</button></td>
+            </tr>
+        </tbody>
+        </table>
+
+        <form class="mt-5" ng-submit="addNew()">
+          <input type="text" placeholder="name" ng-model="newgood.name" required>
+          <input type="text" placeholder="price" ng-model="newgood.price" required>
+          <input type="text" placeholder="country" ng-model="newgood.country" required>
+          <input type="file" placeholder="picture" ng-model="newgood.thumb" required>
+          <input type="submit" value="add New" style="font-family: Eras ITC;">
+        </form>
+
+    </div>
+
+</body>
+</html>
